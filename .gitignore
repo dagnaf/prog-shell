@@ -1,0 +1,8 @@
+#executable 
+*.out
+
+#test file
+test.c
+
+#requirement
+*.doc
