@@ -139,6 +139,7 @@ int fileExist(char *name) {
 	// file full path
 	char file[100];
 	// abs path
+	if (access(name, F_OK) == 0) return 0;
 	if (name[0] == '/' || name[0] == '.') {
 		if (access(name, F_OK) == 0) return 0;
 		else return 1;
